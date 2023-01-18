@@ -4,7 +4,7 @@ const signup = () => {
   return (
     <>
       login page
-      <Link href={'/login'}>login</Link>
+      <Link href={"/login"}>login</Link>
     </>
   );
 };
