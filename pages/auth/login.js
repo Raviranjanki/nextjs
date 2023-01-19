@@ -13,7 +13,7 @@ const login = () => {
               alt="Sample image"
             /> */}
             <Image
-              src={'/img/logo/img3.jpeg'}
+              src={'/img/img3.jpeg'}
             />
           </div>
           <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
