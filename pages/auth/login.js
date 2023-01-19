@@ -13,7 +13,7 @@ const login = () => {
               alt="Sample image"
             /> */}
             <Image
-              src={'/img/mailchimp-Vc2dD4l57og-unsplash.jpg'}
+              src={'/img/logo/mailchimp-Vc2dD4l57og-unsplash.jpg'}
             />
           </div>
           <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
