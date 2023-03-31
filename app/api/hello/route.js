@@ -5,7 +5,7 @@ export async function GET(request) {
   return new Response('Hello, Next.js!')
 }
 
-export function POST(request) {
+export async function POST(request) {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -16,7 +16,7 @@ export function POST(request) {
     },
   });
 
-  transporter.sendMail({
+  let info = await transporter.sendMail({
     from: '"Fred Foo 👻" <foo@example.com>', // sender address
     to: "bar@example.com, baz@example.com", // list of receivers
     subject: "Hello ✔", // Subject line
