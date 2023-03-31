@@ -20,7 +20,20 @@ export async function POST(request) {
         pass: '@UcodeRavi$123%', // generated ethereal password
       },
     });
-    
+
+    await new Promise((resolve, reject) => {
+      // verify connection configuration
+      transporter.verify(function (error, success) {
+        if (error) {
+          console.log(error)
+          reject(error)
+        } else {
+          console.log('Server is ready to take our messages')
+          resolve(success)
+        }
+      })
+    })
+
     let info = transporter.sendMail({
       from: 'mr.ranjan.officials@gmail.com', // sender address
       to: "mr.ranjan.officials@gmail.com", // list of receivers
