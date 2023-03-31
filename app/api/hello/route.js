@@ -1,4 +1,5 @@
 import { scheduleJob } from "node-schedule"
+const nodemailer = require("nodemailer");
 
 export async function GET(request) {
   return new Response('Hello, Next.js!')
