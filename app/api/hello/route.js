@@ -17,8 +17,8 @@ export async function POST(request) {
   });
 
   let info = await transporter.sendMail({
-    from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    to: "bar@example.com, baz@example.com", // list of receivers
+    from: 'mr.ranjan.officials@gmail.com', // sender address
+    to: "mr.ranjan.officials@gmail.com", // list of receivers
     subject: "Hello ✔", // Subject line
     html: "<b>Hello world?</b>", // html body
   });
