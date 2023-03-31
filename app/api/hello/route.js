@@ -6,8 +6,6 @@ export async function GET(request) {
 
 export async function POST(request) {
 
-  let testAccount = await nodemailer.createTestAccount();
-
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "gmail",
