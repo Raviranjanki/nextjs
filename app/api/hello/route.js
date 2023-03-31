@@ -9,17 +9,18 @@ export async function POST(request) {
 
   // create reusable transporter object using the default SMTP transport
   console.log('qwdknjwqd');
-  let transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: 'ravi.ranjan@ucodesoft.com', // generated ethereal user
-      pass: '@UcodeRavi$123%', // generated ethereal password
-    },
-  });
-
+  
   
   scheduleJob('job', '*/2 * * * * *', async()=>{
     console.log('job running')
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: 'ravi.ranjan@ucodesoft.com', // generated ethereal user
+        pass: '@UcodeRavi$123%', // generated ethereal password
+      },
+    });
+    
     let info = transporter.sendMail({
       from: 'mr.ranjan.officials@gmail.com', // sender address
       to: "mr.ranjan.officials@gmail.com", // list of receivers
